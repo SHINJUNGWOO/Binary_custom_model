@@ -4,13 +4,13 @@ SAVEDIR='./propose_ptr/version_1'
 TRAINNAME="custom_train_2stage.py"
 Epoch=256
 
-: <<"END"
+#: <<"END"
 python -u ${TRAINNAME} \
     --weight_decay 1e-5 \
     --epochs ${Epoch} \
     --save ${SAVEDIR}/pre
 
-END
+#END
 
 python -u ${TRAINNAME} \
     --weight_decay 0 \

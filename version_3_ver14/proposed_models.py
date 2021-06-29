@@ -337,7 +337,7 @@ class Aresblock1_6(nn.Module):
         x_3 = self.bin_act_2.apply(x_3)
 
         x_3 = self.Grouped1x1(x_3)
-        x_3 = self.act_bias1(x_3)
+        x_3 = self.act_bias2(x_3)
         x_3 = self.prelu3(x_3)
         x_3 = self.bn3(x_3)
 
